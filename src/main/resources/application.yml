@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: demo3
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
+    url: jdbc:mysql://localhost:3306/test2?serverTimezone=UTC
+    name: defaultDataSource
+  redis:
+    database: 1
+    host: 192.168.204.131
+    jedis:
+      pool:
+        max-active: 8
